@@ -1,0 +1,41 @@
+{
+  "name": "atlas",
+  "version": "0.1.0",
+  "devDependencies": {
+    "ansi-regex": "^2.0.0",
+    "figures": "^1.7.0",
+    "grunt": ">=0.4.5 <1.0.0",
+    "grunt-bower": "^0.21.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": ">=0.10.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": ">=1.0.1",
+    "grunt-contrib-watch": ">=1.0.0",
+    "grunt-express": "^1.4.1",
+    "grunt-inline": "^0.3.6",
+    "gzip-size": "^3.0.0",
+    "lodash": "^4.13.1",
+    "pretty-bytes": "^3.0.1",
+    "source-map": "^0.5.6",
+    "uglify-js": "^2.6.3"
+  },
+  "description": "Atlas website",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "ansi-regex": "^2.0.0",
+    "grunt": ">=0.4.5 <1.0.0",
+    "grunt-bower": "^0.21.2",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "gzip-size": "^3.0.0",
+    "uglify": "^0.1.5",
+    "uglify-js": "^2.6.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gregorymfoster",
+  "license": "ISC"
+}

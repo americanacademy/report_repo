@@ -1,0 +1,72 @@
+body {
+    font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
+    margin:0;
+    #atlas {
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        #options {
+            width: 25%;
+            padding-top:10px;
+            height: 100%;
+            float: left;
+            position: fixed;
+            background-color: black;
+            color: white;
+            .chosen-container {
+                // height: 50px;
+                margin-top: 10px;
+                font-size: 0.8em;
+            }
+            button,
+            input {
+                width: 100%;
+                border: 1px solid black;
+                padding-left: 1%;
+                padding-right: 1%;
+                height: 50;
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.5em;
+            }
+        }
+        table {
+            width: 75%;
+            font-family: sans-serif;
+            padding-left: 10px;
+            float: right;
+            tr {
+            cursor: pointer;
+            }
+            tr{
+            {
+                a:hover {
+                background-color: black;
+                    color: white;
+                }
+            }
+            th {
+                font-size: 1.2em;
+                height:50px;
+                background-color: black;
+                color: white;
+            }
+            td {
+                height: 50px;
+                border: solid 2px #eee;
+                padding: 5px;
+            }
+        }
+    }
+    a {
+        color: black;
+    }
+        
+    p {
+        margin-top: 10px;
+    }
+
+    .collaboration_links {
+        background-color: #2980B9; 
+    }
+}
