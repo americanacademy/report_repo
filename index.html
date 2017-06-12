@@ -16,27 +16,11 @@
 </script>
 <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
 <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDplsTlpTuCS-MBQggxOf0iNloTP-OBOIE"></script>
-<SCRIPT TYPE="text/javascript">
-    function myFunction() {
-        var x = document.getElementById('my-map');
-        var y = document.getElementById('options');
-        if (x.style.display === 'none') {
-            x.style.display = 'block';
-        } else {
-            x.style.display = 'none';
-            y.style.marginTop = '0px';
-        }
-    }
-</SCRIPT>
 
 <link rel="stylesheet" type="text/css" href="dest/css/chosen.css">
 <link rel="stylesheet" type="text/css" href="dest/css/atlas.css">
-<button type="button" onclick="myFunction()">
-    Click to View/Hide Map Interface
-</button>
 
 <div id="atlas">
-    <div class="my-google-map" id="my-map" style="display: block; overflow: visible;"></div>
     <div id="options">
         <p>Filters</p>
         <p id='row-count'></p>
