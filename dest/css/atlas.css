@@ -1,110 +1,50 @@
-body {
-  font: normal 14px/100% "Georgia Serif", Georgia, serif;
-  margin: 0; }
-  /* All #header tags modify the static header in index.html*/
-  body #header {
-    position: fixed; /*This makes the header static*/
-    width: 100%;
-    height: 60;
-    background-color: rgba(31, 45, 96, 1);
-    border-bottom: white 1px; 
-    border-collapse: collapse;
-    }
-    body #header .content{
-      color: white;
-      font-size: 1.2em;
-      position: relative;
-      z-index: -1;
-      padding: 10px;
-    }
-    /*These lines are fine tuned to the size of the frame.*/
-    body #header #buffer{
-      width: 29%;
-    }
-    body #header #organization_header{
-      width: 18%;
-    }
-    body #header #state_header{
-      width: 12%;
-    }
-    body #header #participation_header{
-      width: 36%;
-    }
-    body #header #type_header{
-      width: 5%;
-    }
+<!-- Located in:  In squarespace -> Collaboration Profile - > settings -> advance -->
+<style>
+#header {
+    display: none
+}
 
-  body #atlas {
-    text-align: center;
-    width: 100%;
-    padding-top: 50px;
-    margin: 0 auto; }
-    /*The filter panel*/
-    body #atlas #options {
-      width: 25%;
-      padding-top: 10px;
-      height: 100%;
-      float: left;
-      position: fixed;
-      background-color: rgba(31, 45, 96, 1);
-      color: white; }
-      body #atlas #options .chosen-container {
-        margin-top: 10px;
-        font-size: 0.8em; }
-      body #atlas #options .filterButton{
-        margin-top: 10px;
-        font-size: 1em;
-        width: 90.5%;
-        height: 60;
-        padding-left: 5.5%;
-        text-align: left;
-        cursor: pointer;
-      }
-      body #atlas #options button,
-      body #atlas #options input {
-        width: 100%;
-        border: 1px solid black;
-        padding-left: 1%;
-        padding-right: 1%;
-        height: 50;
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.5em; }
-    /*Main table*/
-    body #atlas table {
-      width: 75%;
-      font-family: serif;
-      padding-left: 1px;
-      border-spacing: 0;
-      float: right; }
-      body #atlas table tr {
-        cursor: pointer; }
-      body #atlas table th {
-        font-size: 1.2em;
-        height: 50px;
-        background-color: rgba(31, 45, 96, 1);
-        color: white; }
-      body #atlas table td {
-        height: 50px;
-        border: solid 1px #eee;
-        border-collapse: collapse;
-        padding: 5px; }
+#footer {
+    display: none
+}
 
-      body #atlas table tr a:hover {
-        background-color: rgba(31, 45, 96, 1);
-        color: white; }
+#preFooter {
+    display: none
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
+</script>
+<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDplsTlpTuCS-MBQggxOf0iNloTP-OBOIE"></script>
 
+<link rel="stylesheet" type="text/css" href="dest/css/chosen.css">
+<link rel="stylesheet" type="text/css" href="dest/css/atlas.css">
 
-  body a {
-    color: black; }
-  body a.active{
-    color: white; }
-  body p {
-    margin-top: 10px; }
+<div id="header">
+    <table id="tophead" class="content">
+        <tr>
+            <th id="publication_header">Publication Name</th>
+            <th id="category_header">Publication Category</th>
+            <th id="date_header">Date Published</th>
+            <th id="topic_header">Topic</th>
+        </tr>
+    </table>
+</div>
 
-    .collaboration_links {
-        background-color: aliceblue; 
-    }
-
-
-/*# sourceMappingURL=atlas.css.map */
+<div id="atlas">
+    <div id="options">
+        <p>Filters</p>
+        <p id='row-count'></p>
+    </div>
+    <table id="orgs">
+        <thead></thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+</div>
+<!-- JAVASCRIPT -->
+<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="dest/js/chosen.jquery.js"></script>
+<script src="dest/js/atlas.min.js?"></script>
+<script src="dest/js/tablesort-min.js"></script>
