@@ -1,50 +1,105 @@
-<!-- Located in:  In squarespace -> Collaboration Profile - > settings -> advance -->
-<style>
-#header {
-    display: none
-}
+body {
+  font: normal 14px/100% "Georgia Serif", Georgia, serif;
+  margin: 0; }
+  body #header {
+    position: fixed; /*This makes the header static*/
+    width: 100%;
+    height: 60;
+    background-color: rgba(31, 45, 96, 1);
+    border-bottom: white 1px; 
+    border-collapse: collapse;
+    }
+    body #header .content{
+      color: white;
+      font-size: 1.2em;
+      position: relative;
+      z-index: -1;
+      padding: 10px;
+    }
+    /*These lines are fine tuned to the size of the frame.*/
+    body #header #buffer{
+      width: 25%;
+    }
+    body #header #publication_header{
+      width: 18.75%;
+    }
+    body #header #category_header{
+      width: 18.75%;
+    }
+    body #header #date_header{
+      width: 18.75%;
+    }
+    body #header #topic_header{
+      width: 18.75%;
+    }
 
-#footer {
-    display: none
-}
+  body #atlas {
+    text-align: center;
+    width: 100%;
+    margin: 0; }
+    body #atlas #options {
+      width: 25%;
+      padding-top: 10px;
+      height: 100%;
+      float: left;
+      position: fixed;
+      background-color: rgba(31, 45, 96, 1);
+      color: white; }
+      body #atlas #options .chosen-container {
+        margin-top: 10px;
+        font-size: 0.8em; }
+      body #atlas #options button,
+      body #atlas #options input {
+        width: 100%;
+        border: 1px solid black;
+        padding-left: 1%;
+        padding-right: 1%;
+        height: 50;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em; }
+    body #atlas #my-map {
+      float: top;
+      float: right;
+      position: fixed;
+      top: 0px;
+      height: 250px;
+      width: 75%;
+    }
+    body #atlas table {
+      width: 75%;
+      font-family: serif;
+      padding-left: 1px;
+      border-spacing: 0;
+      float: right; }
+      body #atlas table tr {
+        cursor: pointer; }
+      body #atlas table th {
+        font-size: 1.2em;
+        height: 50px;
+        background-color: rgba(31, 45, 96, 1);
+        color: white; }
+      body #atlas table td {
+        height: 50px;
+        border: solid 1px #eee;
+        border-collapse: collapse;
+        padding: 5px; }
 
-#preFooter {
-    display: none
-}
-</style>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js">
-</script>
-<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDplsTlpTuCS-MBQggxOf0iNloTP-OBOIE"></script>
+      body #atlas table tr a:hover {
+        background-color: rgba(31, 45, 96, 1);
+        color: white; }
 
-<link rel="stylesheet" type="text/css" href="dest/css/chosen.css">
-<link rel="stylesheet" type="text/css" href="dest/css/atlas.css">
 
-<div id="header">
-    <table id="tophead" class="content">
-        <tr>
-            <th id="publication_header">Publication Name</th>
-            <th id="category_header">Publication Category</th>
-            <th id="date_header">Date Published</th>
-            <th id="topic_header">Topic</th>
-        </tr>
-    </table>
-</div>
+  body a {
+    color: black; }
+  body a.active{
+    color: white; }
+  body p {
+    margin-top: 10px; }
 
-<div id="atlas">
-    <div id="options">
-        <p>Filters</p>
-        <p id='row-count'></p>
-    </div>
-    <table id="orgs">
-        <thead></thead>
-        <tbody id="table-body">
-        </tbody>
-    </table>
-</div>
-<!-- JAVASCRIPT -->
-<script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="dest/js/chosen.jquery.js"></script>
-<script src="dest/js/atlas.min.js?"></script>
-<script src="dest/js/tablesort-min.js"></script>
+    .collaboration_links {
+        background-color: aliceblue; 
+    }
+
+
+/*# sourceMappingURL=atlas.css.map */
