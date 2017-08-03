@@ -1,6 +1,7 @@
 body {
   font: normal 14px/100% "Georgia Serif", Georgia, serif;
   margin: 0; }
+  /* All #header tags modify the static header in index.html*/
   body #header {
     position: fixed; /*This makes the header static*/
     width: 100%;
@@ -35,11 +36,13 @@ body {
     body #header #date_header{
       width: 15%;
     }
-
+  
   body #atlas {
     text-align: center;
     width: 100%;
-    margin: 0; }
+    padding-top: 50px;
+    margin: 0 auto; }
+    /*The filter panel*/
     body #atlas #options {
       width: 25%;
       padding-top: 10px;
@@ -51,6 +54,15 @@ body {
       body #atlas #options .chosen-container {
         margin-top: 10px;
         font-size: 0.8em; }
+      body #atlas #options .filterButton{
+        margin-top: 10px;
+        font-size: 1em;
+        width: 90.5%;
+        height: 60;
+        padding-left: 5.5%;
+        text-align: left;
+        cursor: pointer;
+      }
       body #atlas #options button,
       body #atlas #options input {
         width: 100%;
@@ -61,10 +73,12 @@ body {
         text-align: center;
         font-weight: bold;
         font-size: 1.5em; }
+    /*Main table*/
     body #atlas table {
       width: 75%;
       font-family: serif;
       padding-left: 1px;
+      overflow-x: scroll;
       border-spacing: 0;
       float: right; }
       body #atlas table tr {
