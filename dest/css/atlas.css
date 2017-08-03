@@ -21,19 +21,19 @@ body {
       width: 25%;
     }
     body #header #publication_header{
-      width: 18.75%;
+      width: 15%;
     }
     body #header #category_header{
-      width: 18.75%;
+      width: 15%;
     }
     body #header #focus_header{
-      width: 18.75%;
+      width: 15%;
     }
     body #header #source_header{
-      width: 18.75%;
+      width: 15%;
     }
     body #header #date_header{
-      width: 18.75%;
+      width: 15%;
     }
 
   body #atlas {
