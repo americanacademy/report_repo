@@ -70,6 +70,7 @@ body {
       body #atlas table tr {
         cursor: pointer; }
       body #atlas table th {
+        width: 150px;
         font-size: 1.2em;
         height: 50px;
         background-color: rgba(31, 45, 96, 1);
