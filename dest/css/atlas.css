@@ -21,16 +21,16 @@ body {
       width: 25%;
     }
     body #header #publication_header{
-      width: 20%;
+      width: 19%;
     }
     body #header #category_header{
-      width: 20%;
+      width: 19%;
     }
     body #header #date_header{
-      width: 20%;
+      width: 19%;
     }
     body #header #topic_header{
-      width: 15%;
+      width: 18%;
     }
 
   body #atlas {
@@ -75,11 +75,13 @@ body {
       body #atlas table tr {
         cursor: pointer; }
       body #atlas table th {
+        width: 190px;
         font-size: 1.2em;
         height: 50px;
         background-color: rgba(31, 45, 96, 1);
         color: white; }
       body #atlas table td {
+        width: 190px;
         height: 50px;
         border: solid 1px #eee;
         border-collapse: collapse;
