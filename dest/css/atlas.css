@@ -1,7 +1,6 @@
 body {
   font: normal 14px/100% "Georgia Serif", Georgia, serif;
   margin: 0; }
-  /* All #header tags modify the static header in index.html*/
   body #header {
     position: fixed; /*This makes the header static*/
     width: 100%;
@@ -22,27 +21,22 @@ body {
       width: 25%;
     }
     body #header #publication_header{
-      width: 15%;
+      width: 20%;
     }
     body #header #category_header{
-      width: 15%;
-    }
-    body #header #focus_header{
-      width: 15%;
-    }
-    body #header #source_header{
-      width: 15%;
+      width: 20%;
     }
     body #header #date_header{
+      width: 20%;
+    }
+    body #header #topic_header{
       width: 15%;
     }
-  
+
   body #atlas {
     text-align: center;
     width: 100%;
-    padding-top: 50px;
-    margin: 0 auto; }
-    /*The filter panel*/
+    margin: 0; }
     body #atlas #options {
       width: 25%;
       padding-top: 10px;
@@ -54,15 +48,6 @@ body {
       body #atlas #options .chosen-container {
         margin-top: 10px;
         font-size: 0.8em; }
-      body #atlas #options .filterButton{
-        margin-top: 10px;
-        font-size: 1em;
-        width: 90.5%;
-        height: 60;
-        padding-left: 5.5%;
-        text-align: left;
-        cursor: pointer;
-      }
       body #atlas #options button,
       body #atlas #options input {
         width: 100%;
@@ -73,25 +58,29 @@ body {
         text-align: center;
         font-weight: bold;
         font-size: 1.5em; }
-    /*Main table*/
+    body #atlas #my-map {
+      float: top;
+      float: right;
+      position: fixed;
+      top: 0px;
+      height: 250px;
+      width: 75%;
+    }
     body #atlas table {
       width: 75%;
       font-family: serif;
       padding-left: 1px;
-      overflow-x: scroll;
       border-spacing: 0;
       float: right; }
       body #atlas table tr {
         cursor: pointer; }
       body #atlas table th {
-        width: 150px;
         font-size: 1.2em;
         height: 50px;
         background-color: rgba(31, 45, 96, 1);
         color: white; }
       body #atlas table td {
         height: 50px;
-        width: 150px;
         border: solid 1px #eee;
         border-collapse: collapse;
         padding: 5px; }
