@@ -1,72 +1,97 @@
 body {
-    font: normal 14px/100% "Andale Mono", AndaleMono, monospace;
-    margin:0;
-    #atlas {
-        text-align: center;
-        width: 100%;
-        margin: 0 auto;
-        #options {
-            width: 25%;
-            padding-top:10px;
-            height: 100%;
-            float: left;
-            position: fixed;
-            background-color: black;
-            color: white;
-            .chosen-container {
-                // height: 50px;
-                margin-top: 10px;
-                font-size: 0.8em;
-            }
-            button,
-            input {
-                width: 100%;
-                border: 1px solid black;
-                padding-left: 1%;
-                padding-right: 1%;
-                height: 50;
-                text-align: center;
-                font-weight: bold;
-                font-size: 1.5em;
-            }
-        }
-        table {
-            width: 75%;
-            font-family: sans-serif;
-            padding-left: 10px;
-            float: right;
-            tr {
-            cursor: pointer;
-            }
-            tr{
-            {
-                a:hover {
-                background-color: black;
-                    color: white;
-                }
-            }
-            th {
-                font-size: 1.2em;
-                height:50px;
-                background-color: black;
-                color: white;
-            }
-            td {
-                height: 50px;
-                border: solid 2px #eee;
-                padding: 5px;
-            }
-        }
+  font: normal 14px/100% "Georgia Serif", Georgia, serif;
+  margin: 0; }
+  body #header {
+    position: fixed; /*This makes the header static*/
+    width: 100%;
+    height: 60;
+    background-color: rgba(31, 45, 96, 1);
+    border-bottom: white 1px; 
+    border-collapse: collapse;
     }
-    a {
-        color: black;
+    body #header .content{
+      color: white;
+      font-size: 1.2em;
+      position: relative;
+      z-index: -1;
+      padding: 10px;
     }
-        
-    p {
-        margin-top: 10px;
+    /*These lines are fine tuned to the size of the frame.*/
+    body #header #buffer{
+      width: 25%;
+    }
+    body #header #publication_header{
+      width: 19%;
+    }
+    body #header #category_header{
+      width: 19%;
+    }
+    body #header #date_header{
+      width: 19%;
+    }
+    body #header #topic_header{
+      width: 18%;
     }
 
+  body #atlas {
+    text-align: center;
+    width: 100%;
+    margin: 0; }
+    body #atlas #options {
+      width: 25%;
+      padding-top: 10px;
+      height: 100%;
+      float: left;
+      position: fixed;
+      background-color: rgba(31, 45, 96, 1);
+      color: white; }
+      body #atlas #options .chosen-container {
+        margin-top: 10px;
+        font-size: 0.8em; }
+      body #atlas #options button,
+      body #atlas #options input {
+        width: 100%;
+        border: 1px solid black;
+        padding-left: 1%;
+        padding-right: 1%;
+        height: 50;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5em; }
+    body #atlas table {
+      width: 75%;
+      font-family: serif;
+      padding-left: 1px;
+      border-spacing: 0;
+      float: right; }
+      body #atlas table tr {
+        cursor: pointer; }
+      body #atlas table th {
+        font-size: 1.2em;
+        height: 50px;
+        background-color: rgba(31, 45, 96, 1);
+        color: white; }
+      body #atlas table td {
+        height: 50px;
+        border: solid 1px #eee;
+        border-collapse: collapse;
+        padding: 5px; }
+
+      body #atlas table tr a:hover {
+        background-color: rgba(31, 45, 96, 1);
+        color: white; }
+
+
+  body a {
+    color: black; }
+  body a.active{
+    color: white; }
+  body p {
+    margin-top: 10px; }
+
     .collaboration_links {
-        background-color: #2980B9; 
+        background-color: aliceblue; 
     }
-}
+
+
+/*# sourceMappingURL=atlas.css.map */
