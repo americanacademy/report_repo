@@ -74,6 +74,7 @@ body {
       body #atlas table td {
         height: 50px;
         max-width: 150px;
+        min-width: 80px;
         border: solid 1px #eee;
         border-collapse: collapse;
         padding: 5px; }
