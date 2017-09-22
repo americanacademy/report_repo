@@ -73,6 +73,7 @@ body {
         color: white; }
       body #atlas table td {
         height: 50px;
+        max-width: 150px;
         border: solid 1px #eee;
         border-collapse: collapse;
         padding: 5px; }
